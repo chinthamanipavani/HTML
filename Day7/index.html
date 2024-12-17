@@ -48,10 +48,15 @@
                     <label for="number">WhatsApp No:</label>
                     <input type="text" name="number" id="number" pattern="\+91[6789][0-9]{9}"
                         title="should be alphabets" required><br><br>
-                     <label for="email">E-mail Id:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <input type="email" name="email" required><br><br>
+                  label for="email">E-mail Id:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="email" name="email" required pattern="[a-z\d]+@gmail.com" title="email"><br><br>
+                    <label for="password">Password</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="text" name="password" required
+                        pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[\d])(?=.*[#$%&*]).{8,16}"><br><br>
+
                     <label for="Photo">Photo</label>
-                    <input type="file" name="" id="photo" placeholder="choose file" required><br><br>
+                    <input type="file" name="file" id="photo" placeholder="choose file" accept=".pdf" required><br><br>
+
 
                 </fieldset>
 
